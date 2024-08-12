@@ -10,7 +10,7 @@ const SideBar = () => {
       <div className="flex flex-col  items-center justify-center gap-4">
         <img
           className="max-h-[150px] max-w-[150px] rounded-full object-cover"
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png "
           alt=""
         />
         <h2>
