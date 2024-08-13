@@ -5,7 +5,7 @@ const Portfolio = () => {
         <h2>This is my project1</h2>
         <img
           className=""
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          src="https://i.ibb.co/rxn1LCh/Screenshot-2024-08-13-115100.png"
           alt=""
         />
       </section>
@@ -13,21 +13,21 @@ const Portfolio = () => {
         <h2>This is my project1</h2>
         <img
           className="w-full h-auto "
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          src="https://i.ibb.co/PzTbH5X/Screenshot-2024-08-13-115549.png"
           alt=""
         />
       </section>
       <section>
         <h2>This is my project1</h2>
         <img
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          src="https://i.ibb.co/zRFFrfB/Screenshot-2024-08-13-120559.png"
           alt=""
         />
       </section>
       <section>
         <h2>This is my project1</h2>
         <img
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          src="https://i.ibb.co/1GtL996/Screenshot-2024-08-13-114001.png"
           alt=""
         />
       </section>
