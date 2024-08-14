@@ -7,7 +7,7 @@ const About = () => {
             Ahad Ali
           </h1>
           <h1 className=" md:text-2xl text-nowrap mb-2 text-center md:text-start text-yellow-200 ">
-            junior Frontend Developer
+            Junior Frontend Developer
           </h1>
           <p>
             Hello! I’m a dedicated Junior React Web Developer with a strong
