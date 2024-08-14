@@ -9,7 +9,7 @@ const Resume = () => {
       <section>
         <img
           className="w-3/4 mx-auto"
-          src="https://i.ibb.co/qnCJ1vz/blue-professional-modern-CV-resume.jpg"
+          src="https://i.ibb.co/kcW2McV/Ahad-Ali-resume.jpg"
           alt=""
         />
       </section>
