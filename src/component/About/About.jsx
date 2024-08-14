@@ -56,6 +56,13 @@ const About = () => {
               HTML & CSS: Crafting responsive and visually appealing layouts.
             </li>
             <li>
+              Tailwind CSS: Creating modern, utility-first designs with ease.
+            </li>
+            <li>
+              Bootstrap CSS: Building responsive and mobile-first web projects
+              quickly.
+            </li>
+            <li>
               React: Building efficient and reusable components for seamless
               user experiences.
             </li>
@@ -65,6 +72,13 @@ const About = () => {
             </li>
             <li>
               APIs: Integrating third-party APIs to enhance functionality.
+            </li>
+            <li>
+              Node.js: Developing server-side applications and RESTful APIs.
+            </li>
+            <li>
+              Next.js: Leveraging server-side rendering for fast and
+              SEO-friendly web applications.
             </li>
           </ol>
         </div>
