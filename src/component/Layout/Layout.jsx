@@ -5,7 +5,7 @@ import "../Layout/Layout.css";
 const Layout = () => {
   return (
     <div className="container-box">
-      <div className="side-box w-[250px] relative">
+      <div className="side-box w-full mx-auto md:w-[250px] md:relative h-auto ">
         <section className="sidebar">
           <SideBar></SideBar>
         </section>

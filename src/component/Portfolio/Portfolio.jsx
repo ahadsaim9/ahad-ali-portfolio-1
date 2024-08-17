@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   return (
     <section>
-      <div className=" flex justify-center items-center mx-auto w-44 md:w-80 border-b-blue-950 h-10 pt-5 border-b-4  mb-4 pb-2 ">
+      <div className=" flex justify-center items-center mx-auto  md:w-80 border-b-blue-950 h-10 pt-5 border-b-4  mb-4 pb-2 ">
         <h1 className="text-center md:text-3xl text-2xl  mb-4 text-white font-semibold italic">
           Some of my Projects
         </h1>
       </div>
-      <div className="grid grid-cols-2 gap-5  max-w-screen-xl">
+      <div className="md:grid grid-cols-2 gap-5  max-w-screen-xl">
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"

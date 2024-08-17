@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div className="sidebar h-svh ">
+    <div className="sidebar md:h-svh ">
       <div className="flex flex-col  items-center justify-center gap-4">
         <img
           className="max-h-[150px] max-w-[150px] rounded-full object-cover"
@@ -18,18 +18,16 @@ const SideBar = () => {
           portfolio website.
         </h2>
         <section className="flex gap-5">
-          <abbr title="Linkedin">
-            <div className="bg-sky-600 h-7 w-7 rounded-full p-2 flex items-center justify-center">
-              <NavLink
-                target="_blank"
-                to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
-              >
-                <FaLinkedin></FaLinkedin>
-              </NavLink>
-            </div>
-          </abbr>
+          <div className="bg-sky-600 hover:bg-orange-600 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
+            <NavLink
+              target="_blank"
+              to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
+            >
+              <FaLinkedin></FaLinkedin>
+            </NavLink>
+          </div>
 
-          <div className="bg-sky-600 h-7 w-7 rounded-full p-2 flex items-center justify-center">
+          <div className="bg-sky-600 hover:bg-orange-600 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
             <NavLink
               target="_blank"
               to={"https://www.facebook.com/ahadsaimasm?mibextid=ZbWKwL"}
@@ -37,7 +35,7 @@ const SideBar = () => {
               <FaFacebook></FaFacebook>
             </NavLink>
           </div>
-          <div className="bg-sky-600 h-7 w-7 rounded-full p-2 flex items-center justify-center">
+          <div className="bg-sky-600 hover:bg-orange-600 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
             <NavLink
               target="_blank"
               to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
@@ -48,7 +46,7 @@ const SideBar = () => {
           {/* ***************section************** */}
         </section>
       </div>
-      <nav className="flex flex-col gap-3 text-c1">
+      <nav className="flex flex-col gap-2 text-c1">
         <div>
           <NavLink
             className={({ isActive, isPending }) =>
@@ -56,7 +54,7 @@ const SideBar = () => {
             }
             to={"/"}
           >
-            <h1 className="flex gap-1">
+            <h1 className="flex gap-1 hover:bg-gray-200 pl-2 pt-1 rounded-sm duration-500">
               <span>
                 <IoPerson />
               </span>
@@ -71,7 +69,7 @@ const SideBar = () => {
             }
             to={"/portfolio"}
           >
-            <h1 className="flex gap-1">
+            <h1 className="flex gap-1 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
               <span>
                 <BiLogoProductHunt />
               </span>
@@ -86,7 +84,7 @@ const SideBar = () => {
             }
             to={"/resume"}
           >
-            <h1 className="flex gap-1">
+            <h1 className="flex gap-1 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
               <span>
                 <IoNewspaperSharp />
               </span>
@@ -101,7 +99,7 @@ const SideBar = () => {
             }
             to={"/contact"}
           >
-            <h1 className="flex gap-1 pb-5">
+            <h1 className="flex gap-1 md:pb-5 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
               <span>
                 <RiContactsBook3Fill />
               </span>

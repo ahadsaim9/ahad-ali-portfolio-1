@@ -6,9 +6,9 @@ const Resume = () => {
           My Resume
         </h1>
       </div>
-      <section>
+      <section className="w-3/4 mx-auto">
         <img
-          className="w-3/4 mx-auto"
+          className="w-full h-auto"
           src="https://i.ibb.co/kcW2McV/Ahad-Ali-resume.jpg"
           alt=""
         />
