@@ -2,14 +2,14 @@ const About = () => {
   return (
     <div>
       <div className="flex box-border  w-full flex-col md:flex-row gap-4">
-        <section className="order-2 md:order-1 w-8/12 text-justify Md:grid grid-cols-2">
-          <h1 className="text-3xl text-center md:text-start font-semibold text-yellow-100 ">
+        <section className="order-2 md:order-1 md:w-8/12 text-justify Md:grid grid-cols-2">
+          <h1 className="text-3xl text-center md:text-start font-semibold text-black duration-[10s] ">
             Ahad Ali
           </h1>
-          <h1 className=" md:text-2xl text-nowrap mb-2 text-center md:text-start text-yellow-200 ">
+          <h1 className=" md:text-2xl text-nowrap mb-2 text-center md:text-start text-blue-800 ">
             Junior Frontend Developer
           </h1>
-          <p>
+          <p className=" duration-[10s] ">
             Hello! I’m a dedicated Junior React Web Developer with a strong
             foundation in front-end development. I specialize in building
             dynamic and responsive web applications using React. My journey into
@@ -28,7 +28,7 @@ const About = () => {
       </div>
       {/*********** Education ***********/}
       <section className="text-justify ">
-        <h1 className="my-2 text-2xl text-red-950 underline">Education</h1>
+        <h1 className="my-2 text-2xl text-black underline">Education</h1>
         <p>
           I completed diploma engineering in 2022. Now I’m studying B.Sc in
           Computer Science and Engineering from University of South Asia. My
@@ -38,7 +38,7 @@ const About = () => {
       </section>
       {/*********** Goals ***********/}
       <section className="text-justify ">
-        <h1 className="my-2 text-2xl text-red-950 underline">Goals</h1>
+        <h1 className="my-2 text-2xl text-black underline">Goals</h1>
         <p>
           I’m constantly learning and staying up-to-date with the latest trends
           in web development. My goal is to become a senior developer who can
@@ -49,7 +49,7 @@ const About = () => {
       </section>
       {/*********** My Skills ***********/}
       <section>
-        <h1 className="my-2 text-2xl text-red-950 ">My Skills:</h1>
+        <h1 className="my-2 text-2xl text-black ">My Skills:</h1>
         <div>
           <ol className="flex flex-col gap-3">
             <li>
