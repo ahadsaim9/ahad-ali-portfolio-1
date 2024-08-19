@@ -99,7 +99,7 @@ const SideBar = () => {
             }
             to={"/contact"}
           >
-            <h1 className="flex gap-1 md:pb-5 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
+            <h1 className="flex gap-1 md:mb-5 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
               <span>
                 <RiContactsBook3Fill />
               </span>
