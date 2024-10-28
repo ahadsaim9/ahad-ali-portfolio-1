@@ -7,15 +7,15 @@ const About = () => {
             Ahad Ali
           </h1>
           <h1 className=" md:text-2xl text-nowrap mb-2 text-center md:text-start text-blue-800 ">
-            Junior Frontend Developer
+            Frontend Developer
           </h1>
           <p className=" duration-[10s] ">
-            Hello! I’m a dedicated Junior React Web Developer with a strong
-            foundation in front-end development. I specialize in building
-            dynamic and responsive web applications using React. My journey into
-            the world of web development began with a curiosity for how websites
-            are created and a desire to bring creative ideas to life through
-            code. Always I enjoy my work.
+            Hello! I’m a dedicated Web Developer with a strong foundation in
+            front-end development. I specialize in building dynamic and
+            responsive web applications using React. My journey into the world
+            of web development began with a curiosity for how websites are
+            created and a desire to bring creative ideas to life through code.
+            Always I enjoy my work.
           </p>
         </section>
         <section className="mx-6 my-2 md:items-center flex justify-center order-1 items-center   md:order-2 md:max-w-[250px] md:h-[250px] ">
@@ -27,26 +27,28 @@ const About = () => {
         </section>
       </div>
       {/*********** Education ***********/}
-      <section className="text-justify ">
-        <h1 className="my-2 text-2xl text-black underline">Education</h1>
-        <p>
-          I completed diploma engineering in 2022. Now I’m studying B.Sc in
-          Computer Science and Engineering from University of South Asia. My
-          education has provided me with a strong theoretical foundation in
-          computer science and practical experience in software development.
-        </p>
-      </section>
-      {/*********** Goals ***********/}
-      <section className="text-justify ">
-        <h1 className="my-2 text-2xl text-black underline">Goals</h1>
-        <p>
-          I’m constantly learning and staying up-to-date with the latest trends
-          in web development. My goal is to become a senior developer who can
-          lead projects and mentor others. I am excited about the endless
-          possibilities in the tech world and look forward to contributing to
-          innovative projects.
-        </p>
-      </section>
+      <div>
+        <section className="text-justify ">
+          <h1 className="my-2 text-2xl text-black underline">Education</h1>
+          <p>
+            I completed diploma engineering in April 2022. Now I’m studying B.Sc
+            in Computer Science and Engineering from University of South Asia.
+            My education has provided me with a strong theoretical foundation in
+            computer science and practical experience in software development.
+          </p>
+        </section>
+        {/*********** Goals ***********/}
+        <section className="text-justify ">
+          <h1 className="my-2 text-2xl text-black underline">Goals</h1>
+          <p>
+            I’m constantly learning and staying up-to-date with the latest
+            trends in web development. My goal is to become a senior developer
+            who can lead projects and mentor others. I am excited about the
+            endless possibilities in the tech world and look forward to
+            contributing to innovative projects.
+          </p>
+        </section>
+      </div>
       {/*********** My Skills ***********/}
       <section>
         <h1 className="my-2 text-2xl text-black ">My Skills:</h1>

@@ -36,10 +36,7 @@ const SideBar = () => {
             </NavLink>
           </div>
           <div className="bg-sky-300 hover:bg-orange-400 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
-            <NavLink
-              target="_blank"
-              to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
-            >
+            <NavLink target="_blank" to={"https://github.com/ahadsaim9"}>
               <FaGithub></FaGithub>
             </NavLink>
           </div>

@@ -12,38 +12,38 @@ const Contact = () => {
         <p className=" text-2xl md:text-3xl text-blue-950 italic text-center mb-5 font-bold">
           AHAD ALI
         </p>
-        <p className=" text-[12px] md:text-2xl font-semibold">
+        <p className=" text-[12px] lx:text-[16px]  font-semibold">
           E-mail_Address:
           <span className=" ml-2 italic text-blue-900">
             ahadsaim9@gmail.com
           </span>
         </p>
-        <p className="text-[12px] md:text-2xl font-semibold">
+        <p className="text-[12px] lx:text-[16px] font-semibold">
           Facebook_Link:
           <Link
             target="_blank"
             to={"https://www.facebook.com/ahadsaimasm?mibextid=ZbWKwL"}
           >
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[14px] md:text-2xl ">
+            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px]  ">
               facebook.com/ahadsaim
             </span>
           </Link>
         </p>
-        <p className=" text-[12px] md:text-2xl font-semibold">
+        <p className=" text-[12px] lx:text-[16px]  font-semibold">
           Linkedin_Link:
           <Link
             target="_blank"
             to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
           >
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[14px] md:text-2xl ">
+            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px] ">
               www.linkedin.com/in/ahad-ali
             </span>
           </Link>
         </p>
-        <p className="text-[12px] md:text-2xl font-semibold">
+        <p className="text-[12px] lx:text-[16px]  font-semibold">
           Whatsapp_Number:
           <Link target="_blank">
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[14px] md:text-2xl ">
+            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px]  ">
               01740995191
             </span>
           </Link>
