@@ -12,6 +12,24 @@ const Portfolio = () => {
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
+          to={"https://cd-bd-newse-wala-w-1.web.app/"}
+        >
+          <img
+            className="w-full max-h-[250px] rounded-md"
+            src="https://i.ibb.co.com/jWGPCPM/Screenshot-2024-12-02-143313.png"
+            alt=""
+          />
+          <h4 className=" md:text-2xl font-semibold italic">The Dragon News</h4>
+          <article>
+            This project is the idea of a news channel. Here email
+            authentication and google authentication are used as authentication.
+            If you want to see the details of the news, you can log in and enter
+            the private route, such a routing system has been used.
+          </article>
+        </Link>
+        <Link
+          className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
+          target="_blank"
           to={"https://asm-store.netlify.app/"}
         >
           <img
@@ -26,25 +44,6 @@ const Portfolio = () => {
             specifications if they want.
           </article>
         </Link>
-
-        <Link
-          className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
-          target="_blank"
-          to={"https://golden-bublanina-4d4eca.netlify.app/"}
-        >
-          <img
-            className="w-full max-h-[250px] rounded-md"
-            src="https://i.ibb.co/PzTbH5X/Screenshot-2024-08-13-115549.png"
-            alt=""
-          />
-          <h4 className=" md:text-2xl font-semibold italic">PH Tube</h4>
-          <article>
-            This is a news channel website. It is divided into several
-            categories This site has a lot more work to do. Which will be added
-            later.
-          </article>
-        </Link>
-
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
