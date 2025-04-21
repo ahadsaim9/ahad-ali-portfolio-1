@@ -12,6 +12,27 @@ const Portfolio = () => {
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
+          to={"https://coffee-store-4c2e5.web.app/"}
+        >
+          <img
+            className="w-full max-h-[250px] rounded-md"
+            src="https://i.ibb.co.com/1YRqRHLM/Screenshot-2025-04-21-225523.png"
+            alt=""
+          />
+          <h4 className=" md:text-2xl font-semibold italic">Coffee Shop</h4>
+          <article>
+            This Coffee Shop Management project is a full-stack web application.
+            The front end of the project is built using React and Tailwind CSS,
+            ensuring a responsive and modern user interface. It uses React
+            Router for seamless navigation between different pages like Home,
+            Add Coffee, Users, Sign-In, and Sign-Up. For data handling, the
+            project connects to a backend API that performs all the CRUD
+            (Create, Read, Update, Delete) operations.
+          </article>
+        </Link>
+        <Link
+          className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
+          target="_blank"
           to={"https://cd-bd-newse-wala-w-1.web.app/"}
         >
           <img
