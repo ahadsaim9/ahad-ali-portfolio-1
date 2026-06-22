@@ -12,25 +12,33 @@ const Portfolio = () => {
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
-          to={"https://coffee-store-4c2e5.web.app/"}
+          to={"https://staging.helloauto.ca/"}
         >
           <img
             className="w-full max-h-[250px] rounded-md"
-            src="https://i.ibb.co.com/1YRqRHLM/Screenshot-2025-04-21-225523.png"
+            src="https://i.ibb.co.com/JwCRcsNN/Screenshot-2026-06-22-180322.png"
             alt=""
           />
-          <h4 className=" md:text-2xl font-semibold italic">Coffee Shop</h4>
+          <h4 className=" md:text-2xl font-semibold italic">
+            CarVu – Vehicle Marketplace Platform
+          </h4>
           <article>
-            This Coffee Shop Management project is a full-stack web application.
-            The front end of the project is built using React and Tailwind CSS,
-            ensuring a responsive and modern user interface. It uses React
-            Router for seamless navigation between different pages like Home,
-            Add Coffee, Users, Sign-In, and Sign-Up. For data handling, the
-            project connects to a backend API that performs all the CRUD
-            (Create, Read, Update, Delete) operations.
+            CarVu is a modern vehicle marketplace platform designed to
+            streamline the process of buying, selling, and managing vehicles
+            online. The platform provides an intuitive user experience with
+            advanced vehicle search, filtering, listing management, auction
+            functionality, and secure user workflows. <br />
+            <br />
+            As a Frontend Developer, I contributed to building responsive and
+            scalable user interfaces, integrating RESTful APIs, implementing
+            dynamic forms, managing application state with Redux Toolkit and RTK
+            Query, and ensuring a seamless user experience across different
+            devices. I collaborated closely with backend developers and
+            designers to deliver production-ready features and maintain
+            high-performance standards.
           </article>
         </Link>
-        <Link
+        {/* <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
           to={"https://cd-bd-newse-wala-w-1.web.app/"}
@@ -47,22 +55,36 @@ const Portfolio = () => {
             If you want to see the details of the news, you can log in and enter
             the private route, such a routing system has been used.
           </article>
-        </Link>
+        </Link> */}
         <Link
           className="w-full flex flex-col justify-between p-5 gap-y-2 duration-300 hover:drop-shadow-2xl shadow-2xl rounded-md  "
           target="_blank"
-          to={"https://asm-store.netlify.app/"}
+          to={"https://www.zenticsys.com/"}
         >
           <img
             className="w-full max-h-[250px] rounded-md"
-            src="https://i.ibb.co/rxn1LCh/Screenshot-2024-08-13-115100.png"
+            src="https://i.ibb.co.com/Z6FPqH4C/Screenshot-2026-06-22-184946.png"
             alt=""
           />
-          <h4 className=" md:text-2xl font-semibold italic">ASM STORE</h4>
+          <h4 className=" md:text-2xl font-semibold italic">
+            Zenticsys – Corporate Website
+          </h4>
           <article>
-            This is an iPhone mobile store.Here is the list of Apple brand
-            mobiles and watches. Customers can know their prices and
-            specifications if they want.
+            Zenticsys is a modern software development company website that
+            showcases custom software development, SaaS solutions, enterprise
+            applications, UI/UX design, mobile app development, and digital
+            transformation services across multiple industries. The platform is
+            designed to present the company’s expertise, services, and
+            technology solutions through a clean, responsive, and user-focused
+            experience.
+            <br />
+            <br />
+            As a Frontend Developer, I contributed to developing and maintaining
+            responsive user interfaces, implementing modern web components,
+            optimizing performance, and ensuring a seamless user experience
+            across devices. I collaborated with designers and development teams
+            to deliver a scalable and professional digital presence for the
+            company.
           </article>
         </Link>
         <Link

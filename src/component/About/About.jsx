@@ -1,91 +1,85 @@
+const skillGroups = [
+  {
+    title: "Frontend Development",
+    skills:
+      "React.js, Next.js, TypeScript, JavaScript (ES6+), Redux Toolkit, RTK Query, Tailwind CSS, Material UI (MUI), React Hook Form, Zod",
+  },
+  {
+    title: "Backend Development",
+    skills: "Node.js, Express.js, REST API Development, JWT Authentication",
+  },
+  {
+    title: "Database",
+    skills: "MongoDB, PostgreSQL",
+  },
+  {
+    title: "Tools & Technologies",
+    skills: "Docker, Git, GitHub, Postman, Firebase Cloud Messaging (FCM)",
+  },
+];
+
 const About = () => {
   return (
-    <div>
-      <div className="flex box-border  w-full flex-col md:flex-row gap-4">
-        <section className="order-2 md:order-1 md:w-8/12 text-justify Md:grid grid-cols-2">
-          <h1 className="text-3xl text-center md:text-start font-semibold text-black duration-[10s] ">
-            Ahad Ali
-          </h1>
-          <h1 className=" md:text-2xl text-nowrap mb-2 text-center md:text-start text-blue-800 ">
-            Frontend Developer
-          </h1>
-          <p className=" duration-[10s] ">
-            Hello! I’m a dedicated Web Developer with a strong foundation in
-            front-end development. I specialize in building dynamic and
-            responsive web applications using React. My journey into the world
-            of web development began with a curiosity for how websites are
-            created and a desire to bring creative ideas to life through code.
-            Always I enjoy my work.
+    <section className="space-y-8">
+      <div className="flex flex-col items-center gap-6 md:flex-row">
+        <div className="order-2 md:order-1 md:w-8/12">
+          <h1 className="text-4xl font-bold text-black">Ahad Saim</h1>
+          <h2 className="mt-2 text-xl text-blue-700 md:text-2xl">
+            Software Engineer
+          </h2>
+
+          <p className="mt-4 text-justify leading-8 text-gray-700">
+            Hello! I&apos;m Ahad Saim, a Software Engineer at Zenticsys with
+            experience building modern web applications using React.js, Next.js,
+            TypeScript, and Node.js. I have contributed to enterprise-level
+            platforms including HelloAuto Car Inspection, CarVu Vehicle
+            Marketplace, and the Zenticsys corporate website. My expertise
+            includes frontend architecture, API integration, state management
+            with Redux Toolkit and RTK Query, dashboard development, responsive
+            UI design, and scalable application development. I am passionate
+            about creating clean, maintainable, and user-focused software
+            solutions while continuously expanding my knowledge in backend
+            development, system design, and modern software engineering
+            practices.
           </p>
-        </section>
-        <section className="mx-6 my-2 md:items-center flex justify-center order-1 items-center   md:order-2 md:max-w-[250px] md:h-[250px] ">
+        </div>
+
+        <div className="order-1 flex justify-center md:order-2 md:w-4/12">
           <img
-            className=" h-full w-auto object-cover rounded-sm shadow-2xl "
+            className="max-w-[280px] rounded-lg shadow-xl"
             src="https://i.ibb.co/0qRFZXf/Photo-Room-20240806-124409.png"
-            alt=""
+            alt="Ahad Saim"
           />
-        </section>
+        </div>
       </div>
-      {/*********** Education ***********/}
-      <div>
-        <section className="text-justify ">
-          <h1 className="my-2 text-2xl text-black underline">Education</h1>
-          <p>
-            I completed diploma engineering in April 2022. Now I’m studying B.Sc
-            in Computer Science and Engineering from University of South Asia.
-            My education has provided me with a strong theoretical foundation in
-            computer science and practical experience in software development.
-          </p>
-        </section>
-        {/*********** Goals ***********/}
-        <section className="text-justify ">
-          <h1 className="my-2 text-2xl text-black underline">Goals</h1>
-          <p>
-            I’m constantly learning and staying up-to-date with the latest
-            trends in web development. My goal is to become a senior developer
-            who can lead projects and mentor others. I am excited about the
-            endless possibilities in the tech world and look forward to
-            contributing to innovative projects.
-          </p>
-        </section>
-      </div>
-      {/*********** My Skills ***********/}
+
       <section>
-        <h1 className="my-2 text-2xl text-black ">My Skills:</h1>
-        <div>
-          <ol className="flex flex-col gap-3">
-            <li>
-              HTML & CSS: Crafting responsive and visually appealing layouts.
-            </li>
-            <li>
-              Tailwind CSS: Creating modern, utility-first designs with ease.
-            </li>
-            <li>
-              Bootstrap CSS: Building responsive and mobile-first web projects
-              quickly.
-            </li>
-            <li>
-              React: Building efficient and reusable components for seamless
-              user experiences.
-            </li>
-            <li>JavaScript (ES6+): Writing clean and maintainable code.</li>
-            <li>
-              Version Control: Proficient with Git for managing code changes.
-            </li>
-            <li>
-              APIs: Integrating third-party APIs to enhance functionality.
-            </li>
-            <li>
-              Node.js: Developing server-side applications and RESTful APIs.
-            </li>
-            <li>
-              Next.js: Leveraging server-side rendering for fast and
-              SEO-friendly web applications.
-            </li>
-          </ol>
+        <h2 className="mb-4 text-2xl font-semibold text-black">Education</h2>
+
+        <div className="rounded-lg border border-gray-300 p-4">
+          <h3 className="text-lg font-semibold text-black">
+            Bachelor of Science (B.Sc.) in Computer Science and Engineering
+          </h3>
+          <p>University of South Asia</p>
+          <p>2023 – 2026 (Expected)</p>
         </div>
       </section>
-    </div>
+
+      <section>
+        <h2 className="mb-4 text-2xl font-semibold text-black">
+          Technical Skills
+        </h2>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {skillGroups.map(({ title, skills }) => (
+            <div key={title}>
+              <h3 className="mb-2 font-semibold text-black">{title}</h3>
+              <p className="leading-7">{skills}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </section>
   );
 };
 

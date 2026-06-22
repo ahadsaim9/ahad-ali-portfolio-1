@@ -1,10 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../Layout/Layout";
 import About from "../About/About";
-import Portfolio from "../Portfolio/Portfolio";
-import Contact from "../Contact/Contact";
-import Resume from "../Resume/Resume";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Layout from "../Layout/Layout";
+import Portfolio from "../Portfolio/Portfolio";
+import Resume from "../Resume/Resume";
 
 const router = createBrowserRouter([
   {
@@ -24,10 +23,10 @@ const router = createBrowserRouter([
         path: "/resume",
         element: <Resume></Resume>,
       },
-      {
-        path: "/contact",
-        element: <Contact></Contact>,
-      },
+      // {
+      //   path: "/contact",
+      //   element: <Contact></Contact>,
+      // },
     ],
   },
 ]);
