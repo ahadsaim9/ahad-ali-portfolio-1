@@ -63,7 +63,7 @@ const SideBar = () => {
           <Link
             activeClass="active"
             className="group flex cursor-pointer flex-col items-center gap-1 rounded-lg px-2 py-2 text-xs font-medium text-gray-600 transition-all duration-300 hover:bg-blue-50 hover:text-blue-700 md:flex-row md:gap-3 md:px-4 md:py-3 md:text-base"
-            duration={850}
+            duration={100}
             key={id}
             offset={-64}
             smooth="easeInOutQuart"
