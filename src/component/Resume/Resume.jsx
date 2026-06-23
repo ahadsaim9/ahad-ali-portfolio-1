@@ -1,26 +1,38 @@
+import { m } from "framer-motion";
+
+const resumePages = [
+  "https://i.ibb.co.com/pvmG3qBR/Screenshot-2026-06-22-192048.png",
+  "https://i.ibb.co.com/ZpsLJ711/Screenshot-2026-06-22-192132.png",
+];
+
 const Resume = () => {
   return (
-    <div>
-      <div className=" flex justify-center items-center mx-auto w-44 md:w-56 border-b-blue-950 h-10 pt-5 border-b-4  mb-4 pb-2 ">
-        <h1 className="text-center md:text-3xl text-2xl  mb-4 text-blue-950 font-semibold italic">
-          My Resume
-        </h1>
+    <m.section
+      id="resume"
+      className="page-section"
+      initial={{ opacity: 0, x: -70 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.08 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+    >
+      <div className="mb-10">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+          Experience & education
+        </p>
+        <h2 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">Resume</h2>
       </div>
-      <section className="w-3/4 mx-auto">
-        <img
-          className="w-full h-auto"
-          src="https://i.ibb.co.com/pvmG3qBR/Screenshot-2026-06-22-192048.png"
-          alt=""
-        />
-      </section>
-      <section className="w-3/4 mx-auto">
-        <img
-          className="w-full h-auto"
-          src="https://i.ibb.co.com/ZpsLJ711/Screenshot-2026-06-22-192132.png"
-          alt=""
-        />
-      </section>
-    </div>
+      <div className="mx-auto grid max-w-4xl gap-6">
+        {resumePages.map((page, index) => (
+          <img
+            className="h-auto w-full rounded-xl border border-gray-200 shadow-lg"
+            src={page}
+            alt={`Ahad Saim resume page ${index + 1}`}
+            loading="lazy"
+            key={page}
+          />
+        ))}
+      </div>
+    </m.section>
   );
 };
 

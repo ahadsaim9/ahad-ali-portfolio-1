@@ -1,19 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { LazyMotion, domAnimation } from "framer-motion";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Portfolio from "../Portfolio/Portfolio";
+import Resume from "../Resume/Resume";
 import SideBar from "../SideBar/SideBar";
 import "../Layout/Layout.css";
 
 const Layout = () => {
   return (
-    <div className="container-box">
-      <div className="side-box w-full mx-auto md:w-[250px] md:relative h-auto ">
-        <section className="sidebar">
-          <SideBar></SideBar>
-        </section>
+    <LazyMotion features={domAnimation} strict>
+      <div className="container-box">
+        <SideBar />
+        <main className="page-content">
+          <About />
+          <Portfolio />
+          <Resume />
+          <Contact />
+        </main>
       </div>
-      <section className="outlet">
-        <Outlet></Outlet>
-      </section>
-    </div>
+    </LazyMotion>
   );
 };
 

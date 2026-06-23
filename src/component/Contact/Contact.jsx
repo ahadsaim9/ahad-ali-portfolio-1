@@ -1,55 +1,42 @@
-import { Link } from "react-router-dom";
+import { m } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="max-w-screen-xl flex flex-col items-center">
-      <img
-        className="max-h-[150px] max-w-[150px] mt-10 rounded-full object-cover"
-        src="https://i.ibb.co/Q6Ysgxt/Photo-Room-20240813-165411.png"
-        alt=""
-      />
-      <div className="md:px-2  md:w-2/5 mx-auto md:text-nowrap h-[50vh] mt-6 flex flex-col ">
-        <p className=" text-2xl md:text-3xl text-blue-950 italic text-center mb-5 font-bold">
-          AHAD ALI
+    <m.section
+      id="contact"
+      className="page-section flex items-center justify-center"
+      initial={{ opacity: 0, scale: 0.92 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+    >
+      <div className="w-full max-w-2xl rounded-3xl border border-gray-200 bg-white p-7 text-center shadow-xl md:p-12">
+        <img
+          className="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-blue-50"
+          src="https://i.ibb.co/Q6Ysgxt/Photo-Room-20240813-165411.png"
+          alt="Ahad Saim"
+          loading="lazy"
+        />
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+          Let&apos;s work together
         </p>
-        <p className=" text-[12px] lx:text-[16px]  font-semibold">
-          E-mail_Address:
-          <span className=" ml-2 italic text-blue-900">
+        <h2 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">Contact Me</h2>
+        <p className="mx-auto mt-4 max-w-lg leading-7 text-gray-600">
+          Have a project or opportunity in mind? Send me an email or connect with me online.
+        </p>
+        <div className="mt-7 flex flex-col items-center gap-3 text-sm sm:text-base">
+          <a className="text-blue-700 transition-colors hover:text-blue-900 hover:underline" href="mailto:ahadsaim9@gmail.com">
             ahadsaim9@gmail.com
-          </span>
-        </p>
-        <p className="text-[12px] lx:text-[16px] font-semibold">
-          Facebook_Link:
-          <Link
-            target="_blank"
-            to={"https://www.facebook.com/ahadsaimasm?mibextid=ZbWKwL"}
-          >
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px]  ">
-              facebook.com/ahadsaim
-            </span>
-          </Link>
-        </p>
-        <p className=" text-[12px] lx:text-[16px]  font-semibold">
-          Linkedin_Link:
-          <Link
-            target="_blank"
-            to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
-          >
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px] ">
-              www.linkedin.com/in/ahad-ali
-            </span>
-          </Link>
-        </p>
-        <p className="text-[12px] lx:text-[16px]  font-semibold">
-          Whatsapp_Number:
-          <Link target="_blank">
-            <span className="underline ml-2 text-blue-900 italic duration-500 hover:text-blue-950 text-[12px] lx:text-[16px]  ">
-              01740995191
-            </span>
-          </Link>
-        </p>
+          </a>
+          <a className="text-blue-700 transition-colors hover:text-blue-900 hover:underline" href="https://www.linkedin.com/in/ahad-ali-81bab3278/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a className="text-blue-700 transition-colors hover:text-blue-900 hover:underline" href="https://wa.me/8801740995191" target="_blank" rel="noreferrer">
+            WhatsApp: +880 1740-995191
+          </a>
+        </div>
       </div>
-    </div>
+    </m.section>
   );
 };
 

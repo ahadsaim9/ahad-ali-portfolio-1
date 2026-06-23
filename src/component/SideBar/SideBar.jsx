@@ -2,110 +2,81 @@ import { BiLogoProductHunt } from "react-icons/bi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoNewspaperSharp, IoPerson } from "react-icons/io5";
 import { RiContactsBook3Fill } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
+const navigation = [
+  { id: "about", label: "About", icon: IoPerson },
+  { id: "portfolio", label: "Portfolio", icon: BiLogoProductHunt },
+  { id: "resume", label: "Resume", icon: IoNewspaperSharp },
+  { id: "contact", label: "Contact", icon: RiContactsBook3Fill },
+];
+
+const socials = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ahad-ali-81bab3278/",
+    icon: FaLinkedin,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/ahadsaimasm?mibextid=ZbWKwL",
+    icon: FaFacebook,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/ahadsaim9",
+    icon: FaGithub,
+  },
+];
 
 const SideBar = () => {
   return (
-    <div className="sidebar md:h-svh ">
-      <div className="flex flex-col  items-center justify-center gap-4">
+    <aside className="sidebar" aria-label="Portfolio navigation">
+      <div className="sidebar-profile flex flex-col items-center gap-4">
         <img
-          className="max-h-[150px] max-w-[150px] rounded-full object-cover"
-          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png "
-          alt=""
+          className="h-[132px] w-[132px] rounded-full object-cover ring-4 ring-blue-50"
+          src="https://i.ibb.co/2s99M1W/Photo-Room-20240303-235344.png"
+          alt="Ahad Saim"
         />
-        <h2>
-          Hi, my name is Ahad Ali and I’m a junior web developer. Welcome to my
-          portfolio website.
-        </h2>
-        <section className="flex gap-5">
-          <div className="bg-sky-300 hover:bg-orange-400 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
-            <NavLink
+        <div className="text-center">
+          <h1 className="text-xl font-bold text-gray-950">Ahad Saim</h1>
+          <p className="mt-1 text-sm text-gray-600">Software Engineer</p>
+        </div>
+        <div className="flex gap-3">
+          {socials.map(({ label, href, icon: Icon }) => (
+            <a
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-50 text-blue-700 transition duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:text-white"
+              href={href}
+              key={label}
               target="_blank"
-              to={"https://www.linkedin.com/in/ahad-ali-81bab3278/"}
+              rel="noreferrer"
+              aria-label={label}
             >
-              <FaLinkedin></FaLinkedin>
-            </NavLink>
-          </div>
-
-          <div className="bg-sky-300 hover:bg-orange-400 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
-            <NavLink
-              target="_blank"
-              to={"https://www.facebook.com/ahadsaimasm?mibextid=ZbWKwL"}
-            >
-              <FaFacebook></FaFacebook>
-            </NavLink>
-          </div>
-          <div className="bg-sky-300 hover:bg-orange-400 duration-500 h-7 w-7 rounded-full p-2 flex items-center justify-center">
-            <NavLink target="_blank" to={"https://github.com/ahadsaim9"}>
-              <FaGithub></FaGithub>
-            </NavLink>
-          </div>
-          {/* ***************section************** */}
-        </section>
+              <Icon />
+            </a>
+          ))}
+        </div>
       </div>
-      <nav className="flex flex-col gap-2 text-c1">
-        <div>
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? " text-orange-500 " : ""
-            }
-            to={"/"}
+
+      <nav className="grid grid-cols-4 gap-1 md:flex md:flex-col md:gap-2">
+        {navigation.map(({ id, label, icon: Icon }) => (
+          <Link
+            activeClass="active"
+            className="group flex cursor-pointer flex-col items-center gap-1 rounded-lg px-2 py-2 text-xs font-medium text-gray-600 transition-all duration-300 hover:bg-blue-50 hover:text-blue-700 md:flex-row md:gap-3 md:px-4 md:py-3 md:text-base"
+            duration={850}
+            key={id}
+            offset={-64}
+            smooth="easeInOutQuart"
+            spy
+            hashSpy={false}
+            to={id}
           >
-            <h1 className="flex gap-1 hover:bg-gray-200 pl-2 pt-1 rounded-sm duration-500">
-              <span>
-                <IoPerson />
-              </span>
-              About Me
-            </h1>
-          </NavLink>
-        </div>
-        <div>
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? " text-orange-500  " : ""
-            }
-            to={"/portfolio"}
-          >
-            <h1 className="flex gap-1 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
-              <span>
-                <BiLogoProductHunt />
-              </span>
-              Portfolio
-            </h1>
-          </NavLink>
-        </div>
-        <div>
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? " text-orange-500" : ""
-            }
-            to={"/resume"}
-          >
-            <h1 className="flex gap-1 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
-              <span>
-                <IoNewspaperSharp />
-              </span>
-              Resume
-            </h1>
-          </NavLink>
-        </div>
-        <div>
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? " text-orange-500 " : ""
-            }
-            to={"/contact"}
-          >
-            <h1 className="flex gap-1 md:mb-5 duration-500  hover:bg-gray-200 pl-2 pt-1 rounded-sm">
-              <span>
-                <RiContactsBook3Fill />
-              </span>
-              Contact
-            </h1>
-          </NavLink>
-        </div>
+            <Icon className="text-lg transition-transform duration-300 group-hover:scale-110" />
+            <span>{label}</span>
+          </Link>
+        ))}
       </nav>
-    </div>
+    </aside>
   );
 };
 
